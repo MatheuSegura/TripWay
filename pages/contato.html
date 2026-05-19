@@ -1,90 +1,184 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TripWay — Contato e Reserva</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <title>Contato e Reserva</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
 </head>
-<body style="font-family: Poppins;">
+<body>
 
+  <!-- HEADER -->
+  <header>
+    <div class="header-inner">
+      <a href="../index.html" class="logo">Trip<span>Way</span></a>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="destinos.html">Destinos</a></li>
+          <li><a href="pacotes.html">Pacotes</a></li>
+          <li><a href="contato.html" class="ativo">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <h1>Contato e Reserva</h1>
+    <p>Fale com nossos especialistas e planeje sua próxima viagem</p>
+  </section>
+
+  <!-- FORMULÁRIO + INFO -->
   <main>
-    <section>
-        <h2>Contato e Reserva</h2>
-        <p>Faça sua reserva</p>
-    <form>
-        
-            <label for="nome">Nome Completo</label>
-        <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
-        
-        <br><br>
-            
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+    <section id="contato-section">
+      <div class="container">
+        <div class="contato-grid">
 
-        <br><br>
-        <label for="destino">Destino de interesse:</label>
-        <select id="destino" name="destino" required>
-          <option value="" disabled selected>Selecione um destino</option>
-          <option value="maldivas">Maldivas</option>
-          <option value="alpes">Alpes Suíços - Suíça</option>
-          <option value="rio">Rio de Janeiro - Brasil</option>
-          <option value="marrakech">Marrakech - Marrocos</option>
-        </select>
+          <!-- FORMULÁRIO -->
+          <div class="form-wrapper" id="formulario">
+            <h2>Faça sua Reserva</h2>
 
-        <br><br>
+            <form action="#" method="post">
+              <div class="form-linha">
+                <div class="form-grupo">
+                  <label for="nome">Nome Completo</label>
+                  <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+                </div>
+                <div class="form-grupo">
+                  <label for="email">E-mail</label>
+                  <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                </div>
+              </div>
 
-        <label for="data">Data de partida:</label>
-        <input type="date" id="data" name="data" required>
+              <div class="form-grupo">
+                <label for="destino">Destino de interesse</label>
+                <select id="destino" name="destino" required>
+                  <option value="" disabled selected>Selecione um destino</option>
+                  <option value="maldivas">Maldivas</option>
+                  <option value="alpes">Alpes Suíços — Suíça</option>
+                  <option value="rio">Rio de Janeiro — Brasil</option>
+                  <option value="marrakech">Marrakech — Marrocos</option>
+                  <option value="kyoto">Kyoto — Japão</option>
+                  <option value="islandia">Islândia</option>
+                  <option value="outro">Outro destino</option>
+                </select>
+              </div>
 
-        <br><br>
+              <div class="form-linha">
+                <div class="form-grupo">
+                  <label for="data">Data de partida</label>
+                  <input type="date" id="data" name="data" required>
+                </div>
+                <div class="form-grupo">
+                  <label for="pessoas">Quantidade de pessoas</label>
+                  <select id="pessoas" name="pessoas" required>
+                    <option value="" disabled selected>Selecione</option>
+                    <option value="1">1 pessoa</option>
+                    <option value="2">2 pessoas</option>
+                    <option value="3">3 pessoas</option>
+                    <option value="4">4 pessoas</option>
+                    <option value="5">5 pessoas</option>
+                    <option value="6">6 ou mais pessoas</option>
+                  </select>
+                </div>
+              </div>
 
-        <label for="pessoas">Quantidade de pessoas:</label>
-        <select id="pessoas" name="pessoas" required>
-          <option value="" disabled selected>Selecione</option>
-          <option value="1">1 pessoa</option>
-          <option value="2">2 pessoas</option>
-          <option value="3">3 pessoas</option>
-          <option value="4">4 pessoas</option>
-          <option value="5">5 pessoas</option>
-          <option value="6">6 ou mais pessoas</option>
-        </select>
+              <div class="form-grupo">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Conte mais sobre a viagem que você deseja..."></textarea>
+              </div>
 
-        <br><br>
-        
-        <label for="mensagem">Mensagem:</label>
-        <br>
-        <textarea id="mensagem" name="mensagem" rows="5" cols="50" placeholder="Conte mais sobre a viagem que você deseja..."></textarea>
+              <button type="submit" class="btn btn-primario">Enviar Solicitação ✈️</button>
+            </form>
+          </div>
 
-        <br>
+          <!-- INFORMAÇÕES DE CONTATO -->
+          <div class="contato-info">
+            <h2>Outras formas de contato</h2>
 
-        <button type="submit">Fazer Reserva</button>
+            <div class="info-item">
+              <span class="info-icone">📞</span>
+              <p>
+                <strong>Telefone</strong>
+                (11) 3000-0000
+              </p>
+            </div>
 
-    </form>
+            <div class="info-item">
+              <span class="info-icone">💬</span>
+              <p>
+                <strong>WhatsApp</strong>
+                (11) 99000-0000
+              </p>
+            </div>
 
-    <h2>Outras formas de contato</h2>
-      <ul>
-        <li>Telefone: (11) 3000-0000</li>
-        <li>WhatsApp: (11) 99000-0000</li>
-        <li>E-mail: contato@tripway.com.br</li>
-        <li>Endereço: Av. Paulista, 1106 - São Paulo, SP</li>
-        <li>Horário: Segunda a Sexta, das 9h às 18h</li>
-      </ul>
+            <div class="info-item">
+              <span class="info-icone">📧</span>
+              <p>
+                <strong>E-mail</strong>
+                contato@tripway.com.br
+              </p>
+            </div>
 
+            <div class="info-item">
+              <span class="info-icone">📍</span>
+              <p>
+                <strong>Endereço</strong>
+                Av. Paulista, 1106 — São Paulo, SP
+              </p>
+            </div>
+
+            <div class="info-item">
+              <span class="info-icone">🕘</span>
+              <p>
+                <strong>Horário de atendimento</strong>
+                Segunda a Sexta, das 9h às 18h
+              </p>
+            </div>
+
+            <img
+              src="https://images.unsplash.com/photo-1488085061387-422e29b40080?w=600&q=80"
+              alt="Avião sobrevoando destino turístico ao pôr do sol"
+              style="margin-top:2rem; border-radius:12px; width:100%; max-height:220px; object-fit:cover;"
+            >
+          </div>
+
+        </div>
+      </div>
     </section>
   </main>
 
+  <!-- FOOTER -->
   <footer>
-    <p>TripWay - Guia de Viagens. Todos os direitos reservados.</p>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-            </ul>
-        </nav>
+    <div class="footer-inner">
+      <div>
+        <div class="footer-logo">Trip<span>Way</span></div>
+        <p class="footer-desc">Sua agência de viagens para destinos incríveis ao redor do mundo.</p>
+      </div>
+      <div class="footer-nav">
+        <h4>Páginas</h4>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="destinos.html">Destinos</a></li>
+          <li><a href="pacotes.html">Pacotes</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+      <div class="footer-contato">
+        <h4>Contato</h4>
+        <p>📧 contato@tripway.com.br</p>
+        <p>📞 (11) 3000-0000</p>
+        <p>📍 Av. Paulista, 1106 — SP</p>
+      </div>
+    </div>
+    <div class="footer-copy">
+      <p>© 2025 TripWay — Guia de Viagens. Todos os direitos reservados.</p>
+    </div>
   </footer>
-
 
 </body>
 </html>
