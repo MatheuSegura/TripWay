@@ -92,3 +92,45 @@ section, main {
 .logo span {
   color: var(--cor-secundaria);
 }
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+nav ul li a {
+  color: rgba(255,255,255,0.85);
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 0.4rem 0;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--cor-secundaria);
+  transition: width 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: var(--cor-branco);
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+nav ul li a.ativo {
+  color: var(--cor-branco);
+  font-weight: 600;
+}
+
+nav ul li a.ativo::after {
+  width: 100%;
+}
