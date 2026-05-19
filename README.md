@@ -1,7 +1,10 @@
 TripWay
+
 Integrantes
-Matheus Segura Anacleto de Souza - 570878
-Pietro Ibra de Mattos - 573262
+
+│Matheus Segura Anacleto de Souza - 570878│
+
+│Pietro Ibra de Mattos - 573262│
 
 Descrição
 Projeto desenvolvido para a disciplina de Front-End, com o objetivo de criar um site multipágina para uma empresa fictícia de viagens.
