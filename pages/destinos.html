@@ -1,57 +1,171 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <title>TripWay | Destinos</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TripWay — Destinos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
 </head>
-<body style="font-family: Poppins;">
-    <h1>TripWay</h1>
+<body>
 
-    <main>
-        <section>
-            <h2>Nossos Destinos</h2>
-            <p>Conheça os destinos mais incríveis que a TripWay tem a oferecer.</p>
+  <!-- HEADER -->
+  <header>
+    <div class="header-inner">
+      <a href="../index.html" class="logo">Trip<span>Way</span></a>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="destinos.html" class="ativo">Destinos</a></li>
+          <li><a href="pacotes.html">Pacotes</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-            <article>
-            <h3>Maldivas</h3>
-            <img src="https://xtravel.com.br/wp-content/uploads/2024/02/resort-allinclusive-maldivas-xtravel-destaque.jpg" alt="Praia das Maldivas com água cristalina e bangalôs sobre o mar">
-            <p>As Maldivas são um arquipélago no Oceano Índico famoso por suas águas
-            cristalinas, recifes de coral coloridos e bangalôs luxuosos sobre o mar.
-            É o destino perfeito para quem busca relaxamento e natureza preservada.</p>
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <h1>Nossos Destinos</h1>
+    <p>Explore os lugares mais incríveis do mundo com a TripWay</p>
+  </section>
 
-            <h3>Rio de Janeiro - Brasil</h3>
-            <img src="https://blog.123milhas.com/wp-content/uploads/2022/04/o-que-fazer-no-rio-de-janeiro-cristo-redentor-conexao123.jpg" alt="Praia de Copacabana no Rio de Janeiro com o Pão de Açúcar ao fundo">
-            <p>A Cidade Maravilhosa encanta com suas praias famosas, o Cristo Redentor,
-            o Pão de Açúcar e a vibrante cultura carioca. Um destino completo que mistura
-            natureza, história e animação.</p>
+  <!-- DESTINOS -->
+  <main>
+    <section id="lista-destinos">
+      <div class="container">
+        <div class="secao-titulo">
+          <h2>Destinos Disponíveis</h2>
+          <p>Escolha seu próximo destino e deixe a TripWay cuidar de tudo</p>
+          <div class="linha-decorativa"></div>
+        </div>
 
-            <h3>Alpes Suíços - Suíça</h3>
-            <img src="https://images.pexels.com/photos/18261782/pexels-photo-18261782/free-photo-of-panorama-vista-paisagem-montanhas.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Montanhas nevadas dos Alpes Suíços com aldeias ao fundo">
-            <p>Os Alpes Suíços oferecem paisagens de tirar o fôlego durante todo o ano.
-            No inverno, são perfeitos para esqui e snowboard. No verão, trilhas incríveis
-            e aldeias encantadoras esperam pelos visitantes.</p>
+        <div class="cards-container">
 
-            <h3>Marrakech - Marrocos</h3>
-            <img src="https://lalarebelo.com/wp-content/uploads/2022/07/Marrocos-com-crianc%CC%A7as-21-05-2022-15-13-16-1.jpg" alt="Souks coloridos e arquitetura árabe de Marrakech no Marrocos">
-            <p>Marrakech é uma cidade mágica no norte da África, com souks cheios de cores,
-            palácios históricos e a famosa Praça Djemaa el-Fna. Uma experiência cultural
-            única e inesquecível.</p>
-            </article>
-        </section>
-    </main>
+          <article class="card">
+            <img
+              class="card-imagem"
+              src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=600&q=80"
+              alt="Bangalôs sobre o mar cristalino das Maldivas com água turquesa"
+            >
+            <div class="card-corpo">
+              <span class="badge">Mais vendido</span>
+              <h3>Maldivas</h3>
+              <p>As Maldivas são um arquipélago no Oceano Índico famoso por suas águas
+              cristalinas, recifes de coral coloridos e bangalôs luxuosos sobre o mar.
+              É o destino perfeito para quem busca relaxamento e natureza preservada.</p>
+              <a href="contato.html" class="btn btn-primario">Reservar agora</a>
+            </div>
+          </article>
 
-    <footer>
-        <p>TripWay - Guia de Viagens. Todos os direitos reservados.</p>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-            </ul>
-        </nav>
-    </footer>
-    
+          <article class="card">
+            <img
+              class="card-imagem"
+              src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?w=600&q=80"
+              alt="Praia de Copacabana no Rio de Janeiro com o Pão de Açúcar ao fundo"
+            >
+            <div class="card-corpo">
+              <h3>Rio de Janeiro — Brasil</h3>
+              <p>A Cidade Maravilhosa encanta com suas praias famosas, o Cristo Redentor,
+              o Pão de Açúcar e a vibrante cultura carioca. Um destino completo que mistura
+              natureza, história e animação.</p>
+              <a href="contato.html" class="btn btn-primario">Reservar agora</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img
+              class="card-imagem"
+              src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80"
+              alt="Montanhas nevadas dos Alpes Suíços com aldeias ao fundo"
+            >
+            <div class="card-corpo">
+              <h3>Alpes Suíços — Suíça</h3>
+              <p>Os Alpes Suíços oferecem paisagens de tirar o fôlego durante todo o ano.
+              No inverno, são perfeitos para esqui e snowboard. No verão, trilhas incríveis
+              e aldeias encantadoras esperam pelos visitantes.</p>
+              <a href="contato.html" class="btn btn-primario">Reservar agora</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img
+              class="card-imagem"
+              src="https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=600&q=80"
+              alt="Souks coloridos e arquitetura árabe de Marrakech no Marrocos"
+            >
+            <div class="card-corpo">
+              <h3>Marrakech — Marrocos</h3>
+              <p>Marrakech é uma cidade mágica no norte da África, com souks cheios de cores,
+              palácios históricos e a famosa Praça Djemaa el-Fna. Uma experiência cultural
+              única e inesquecível.</p>
+              <a href="contato.html" class="btn btn-primario">Reservar agora</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img
+              class="card-imagem"
+              src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=600&q=80"
+              alt="Templo japonês em Kyoto com cerejeiras em flor"
+            >
+            <div class="card-corpo">
+              <span class="badge">Novidade</span>
+              <h3>Kyoto — Japão</h3>
+              <p>A antiga capital imperial do Japão deslumbra com seus templos milenares,
+              jardins Zen, cerejeiras em flor e a elegante cultura japonesa tradicional.</p>
+              <a href="contato.html" class="btn btn-primario">Reservar agora</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img
+              class="card-imagem"
+              src="https://images.unsplash.com/photo-1531572753322-ad063cecc140?w=600&q=80"
+              alt="Paisagem vulcânica da Islândia com aurora boreal"
+            >
+            <div class="card-corpo">
+              <h3>Islândia</h3>
+              <p>Terra de contrastes extraordinários: aurora boreal, geysers, cachoeiras
+              épicas, campos de lava e a famosa Blue Lagoon. Uma aventura natural única.</p>
+              <a href="contato.html" class="btn btn-primario">Reservar agora</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <div class="footer-logo">Trip<span>Way</span></div>
+        <p class="footer-desc">Sua agência de viagens para destinos incríveis ao redor do mundo.</p>
+      </div>
+      <div class="footer-nav">
+        <h4>Páginas</h4>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="destinos.html">Destinos</a></li>
+          <li><a href="pacotes.html">Pacotes</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+      <div class="footer-contato">
+        <h4>Contato</h4>
+        <p>📧 contato@tripway.com.br</p>
+        <p>📞 (11) 3000-0000</p>
+        <p>📍 Av. Paulista, 1106 — SP</p>
+      </div>
+    </div>
+    <div class="footer-copy">
+      <p>© 2025 TripWay — Guia de Viagens. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
 </body>
 </html>
