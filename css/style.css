@@ -1,5 +1,40 @@
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+:root {
+  --cor-primaria: #1a6b5c;
+  --cor-primaria-escura: #134e43;
+  --cor-secundaria: #f0a500;
+  --cor-acento: #e85d26;
+  --cor-fundo: #f7f5f0;
+  --cor-fundo-card: #ffffff;
+  --cor-texto: #2b2b2b;
+  --cor-texto-claro: #6b6b6b;
+  --cor-branco: #ffffff;
+  --cor-footer: #111111;
+
+  --fonte-titulo: 'Playfair Display', serif;
+  --fonte-corpo: 'Poppins', sans-serif;
+
+  --sombra-card: 0 4px 20px rgba(0, 0, 0, 0.08);
+  --sombra-card-hover: 0 10px 36px rgba(0, 0, 0, 0.16);
+  --raio-borda: 12px;
+  --transicao: all 0.3s ease;
+
+  --max-largura: 1200px;
+  --espaco-secao: 5rem;
+}
+
+body {
+  font-family: var(--fonte-corpo);
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+
