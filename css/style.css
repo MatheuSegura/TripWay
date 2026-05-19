@@ -55,3 +55,40 @@ a {
 a:hover {
   color: var(--cor-secundaria);
 }
+
+header {
+  background: linear-gradient(135deg, var(--cor-primaria-escura) 0%, var(--cor-primaria) 100%);
+  color: var(--cor-branco);
+  padding: 0;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.15);
+}
+
+section, main {
+  position: relative;
+  z-index: 1;
+}
+
+.header-inner {
+  max-width: var(--max-largura);
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+}
+
+.logo {
+  font-family: var(--fonte-titulo);
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--cor-branco);
+  letter-spacing: 1px;
+}
+
+.logo span {
+  color: var(--cor-secundaria);
+}
