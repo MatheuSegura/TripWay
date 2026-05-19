@@ -9,9 +9,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap%22 rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
 </head>
- <body>
-
-    <header id="topo">
+<body>
+ 
+  <!-- HEADER -->
+  <header id="topo">
     <div class="header-inner">
       <a href="index.html" class="logo">Trip<span>Way</span></a>
       <nav>
@@ -23,28 +24,153 @@
         </ul>
       </nav>
     </div>
-    </header>
-    
-<main>
-        <section>
-            <h2>Bem-vindo à TripWay</h2>
-            <p>Sua agência de viagens para destinos incríveis ao redor do mundo.</p>
-            <img src="TripWay.webp" alt="Logo da empresa">
-        
-        <h2>Sobre a TripWay</h2>
-      <p>
-        A TripWay é uma agência de viagens criada para ajudar viajantes
-        a descobrir os melhores destinos do mundo. Com mais de 15 anos de experiência,
-        oferecemos pacotes personalizados para todos os gostos e orçamentos.
-      </p>
-      <p>
-        Nossa missão é tornar cada viagem uma experiência inesquecível,
-        cuidando de todos os detalhes para que você só precise se preocupar em aproveitar.
-      </p>
-      </section>
-      </main>
-      <footer>
-        <p>TripWay - Guia de Viagens. Todos os direitos reservados.</p>
-      </footer>
- </body>
+  </header>
+ 
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-conteudo">
+      <h1>Descubra o Mundo com a TripWay</h1>
+      <p>Sua agência de viagens para destinos incríveis ao redor do mundo. Roteiros personalizados, experiências únicas.</p>
+      <a href="pages/destinos.html" class="btn btn-primario">Ver Destinos</a>
+      <a href="pages/contato.html" class="btn btn-secundario">Fazer Reserva</a>
+    </div>
+  </section>
+ 
+  <!-- SOBRE -->
+  <section id="sobre">
+    <div class="container">
+      <div class="sobre-grid">
+        <div class="sobre-texto">
+          <h2>Sobre a TripWay</h2>
+          <p>
+            A TripWay é uma agência de viagens criada para ajudar viajantes
+            a descobrir os melhores destinos do mundo. Com mais de 15 anos de experiência,
+            oferecemos pacotes personalizados para todos os gostos e orçamentos.
+          </p>
+          <p>
+            Nossa missão é tornar cada viagem uma experiência inesquecível,
+            cuidando de todos os detalhes para que você só precise se preocupar em aproveitar.
+          </p>
+          <a href="pages/pacotes.html" class="btn btn-outline" style="margin-top:1.5rem">Conhecer Pacotes</a>
+        </div>
+        <div class="sobre-imagem">
+          <img
+            src="https://images.unsplash.com/photo-1530789253388-582c481c54b0?w=800&q=80"
+            alt="Casal viajando e apreciando paisagem ao pôr do sol"
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- NÚMEROS -->
+  <section id="numeros">
+    <div class="container">
+      <div class="numeros-grid">
+        <div class="numero-item">
+          <h3>15+</h3>
+          <p>Anos de experiência</p>
+        </div>
+        <div class="numero-item">
+          <h3>8.000+</h3>
+          <p>Clientes satisfeitos</p>
+        </div>
+        <div class="numero-item">
+          <h3>120+</h3>
+          <p>Destinos disponíveis</p>
+        </div>
+        <div class="numero-item">
+          <h3>98%</h3>
+          <p>Taxa de satisfação</p>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- DESTINOS EM DESTAQUE -->
+  <section id="destinos-preview">
+    <div class="container">
+      <div class="secao-titulo">
+        <h2>Destinos em Destaque</h2>
+        <p>Explore os lugares mais incríveis que selecionamos especialmente para você</p>
+        <div class="linha-decorativa"></div>
+      </div>
+ 
+      <div class="cards-container">
+        <article class="card">
+          <img
+            class="card-imagem"
+            src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=600&q=80"
+            alt="Bangalôs sobre o mar cristalino das Maldivas"
+          >
+          <div class="card-corpo">
+            <span class="badge">Mais vendido</span>
+            <h3>Maldivas</h3>
+            <p>Arquipélago paradisíaco com águas cristalinas, recifes de coral e bangalôs de luxo sobre o mar.</p>
+            <a href="pages/destinos.html" class="btn btn-outline">Ver mais</a>
+          </div>
+        </article>
+ 
+        <article class="card">
+          <img
+            class="card-imagem"
+            src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?w=600&q=80"
+            alt="Cristo Redentor e Pão de Açúcar no Rio de Janeiro"
+          >
+          <div class="card-corpo">
+            <h3>Rio de Janeiro</h3>
+            <p>A Cidade Maravilhosa com praias famosas, Cristo Redentor e a vibrante cultura carioca.</p>
+            <a href="pages/destinos.html" class="btn btn-outline">Ver mais</a>
+          </div>
+        </article>
+ 
+        <article class="card">
+          <img
+            class="card-imagem"
+            src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80"
+            alt="Montanhas nevadas dos Alpes Suíços"
+          >
+          <div class="card-corpo">
+            <h3>Alpes Suíços</h3>
+            <p>Paisagens de tirar o fôlego durante todo o ano, perfeitas para ski, trilhas e aldeias encantadoras.</p>
+            <a href="pages/destinos.html" class="btn btn-outline">Ver mais</a>
+          </div>
+        </article>
+      </div>
+ 
+      <div style="text-align:center; margin-top:2.5rem;">
+        <a href="pages/destinos.html" class="btn btn-primario">Ver Todos os Destinos</a>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <div class="footer-logo">Trip<span>Way</span></div>
+        <p class="footer-desc">Sua agência de viagens para destinos incríveis ao redor do mundo.</p>
+      </div>
+      <div class="footer-nav">
+        <h4>Páginas</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pages/destinos.html">Destinos</a></li>
+          <li><a href="pages/pacotes.html">Pacotes</a></li>
+          <li><a href="pages/contato.html">Contato</a></li>
+        </ul>
+      </div>
+      <div class="footer-contato">
+        <h4>Contato</h4>
+        <p>📧 contato@tripway.com.br</p>
+        <p>📞 (11) 3000-0000</p>
+        <p>📍 Av. Paulista, 1106 — SP</p>
+      </div>
+    </div>
+    <div class="footer-copy">
+      <p>© 2025 TripWay — Guia de Viagens. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+ 
+</body>
 </html>
