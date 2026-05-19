@@ -1,5 +1,136 @@
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+:root {
+  --cor-primaria: #1a6b5c;
+  --cor-primaria-escura: #134e43;
+  --cor-secundaria: #f0a500;
+  --cor-acento: #e85d26;
+  --cor-fundo: #f7f5f0;
+  --cor-fundo-card: #ffffff;
+  --cor-texto: #2b2b2b;
+  --cor-texto-claro: #6b6b6b;
+  --cor-branco: #ffffff;
+  --cor-footer: #111111;
+
+  --fonte-titulo: 'Playfair Display', serif;
+  --fonte-corpo: 'Poppins', sans-serif;
+
+  --sombra-card: 0 4px 20px rgba(0, 0, 0, 0.08);
+  --sombra-card-hover: 0 10px 36px rgba(0, 0, 0, 0.16);
+  --raio-borda: 12px;
+  --transicao: all 0.3s ease;
+
+  --max-largura: 1200px;
+  --espaco-secao: 5rem;
+}
+
+body {
+  font-family: var(--fonte-corpo);
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transicao);
+}
+
+a:hover {
+  color: var(--cor-secundaria);
+}
+
+header {
+  background: linear-gradient(135deg, var(--cor-primaria-escura) 0%, var(--cor-primaria) 100%);
+  color: var(--cor-branco);
+  padding: 0;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.15);
+}
+
+section, main {
+  position: relative;
+  z-index: 1;
+}
+
+.header-inner {
+  max-width: var(--max-largura);
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+}
+
+.logo {
+  font-family: var(--fonte-titulo);
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--cor-branco);
+  letter-spacing: 1px;
+}
+
+.logo span {
+  color: var(--cor-secundaria);
+}
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+nav ul li a {
+  color: rgba(255,255,255,0.85);
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 0.4rem 0;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--cor-secundaria);
+  transition: width 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: var(--cor-branco);
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+nav ul li a.ativo {
+  color: var(--cor-branco);
+  font-weight: 600;
+}
+
+nav ul li a.ativo::after {
+  width: 100%;
 }
