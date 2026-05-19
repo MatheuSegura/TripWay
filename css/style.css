@@ -37,4 +37,21 @@ body {
   font-size: 1rem;
 }
 
+img {
+  max-width: 100%;
+  display: block;
+}
 
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transicao);
+}
+
+a:hover {
+  color: var(--cor-secundaria);
+}
